@@ -1,0 +1,33 @@
+@import "home";
+@import "media";
+
+@font-face{
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNovaRegular/ProximaNovaRegular.eot');
+  src: url('../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?iefix') format('eot'),
+  url('../fonts/ProximaNovaRegular/ProximaNovaRegular.woff') format('woff'),
+  url('../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url('../fonts/ProximaNovaSemibold/ProximaNova-Semibold.eot');
+  src: url('../fonts/ProximaNovaSemibold/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ProximaNovaSemibold/ProximaNova-Semibold.woff') format('woff'),
+  url('../fonts/ProximaNovaSemibold/ProximaNova-Semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
