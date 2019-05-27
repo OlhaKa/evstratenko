@@ -18,22 +18,39 @@
 
         <div class="top_header">
             <div class="container">
+<!--                mobile view-->
+                <div class="btn-group d-lg-none">
+                    <a href="tel:+74959574890">Phone: +74 959 574890</a>
+                    <span id="show_contacts_btn"></span>
+                    <div class="dropdown-menu" id="contacts_menu">
+                        <a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a>
+                        <a href="tel:+380931241843">Viber: +38 093 1241843</a>
+                    </div>
+                </div>
+                <!--                mobile view end-->
                 <ul>
-                    <li><a href="tel:+74959574890">Phone: +74 959 574890</a></li>
-                    <li><a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a></li>
-                    <li><a href="tel:+380931241843">Viber: +38 093 1241843</a></li>
-                    <li><a href="mailto:Info@olgaevstratenko.com">E-mail: Info@olgaevstratenko.com</a></li>
+                    <li class="d-none d-lg-block"><a href="tel:+74959574890">Phone: +74 959 574890</a></li>
+                    <li class="d-none d-lg-block"><a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a></li>
+                    <li class="d-none d-lg-block"><a href="tel:+380931241843">Viber: +38 093 1241843</a></li>
+                    <li><a href="mailto:Info@olgaevstratenko.com">
+                        <span>E-mail: Info@olgaevstratenko.com</span>
+                        <i class="fas fa-envelope"></i>
+                    </a></li>
                 </ul>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-xl navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="media/logo.svg" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -47,7 +64,7 @@
                             <a class="nav-link" href="#">Why Barcelona?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Disabled</a>
+                            <a class="nav-link" href="#">How it works</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Reviews</a>
@@ -264,10 +281,10 @@
         <section class="full_height section-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-4 section_title">
+                    <div class="col-md-4 section_title">
                         Services
                     </div>
-                    <div class="col-4">
+                    <div class="col-md-5">
                         <h6> We provide a wide range of services
                             in various areas of medicine. </h6>
                     </div>
@@ -458,10 +475,13 @@
                         <img src="media/send_icon_white.svg" alt="">
                     </a>
                 </li>
-                <li><a href="tel:+74959574890">Phone: +74 959 574890</a></li>
-                <li><a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a></li>
-                <li><a href="tel:+380931241843">Viber: +38 093 1241843</a></li>
-                <li><a href="mailto:Info@olgaevstratenko.com">E-mail: Info@olgaevstratenko.com</a></li>
+                <li class="d-none d-xl-block"><a href="tel:+74959574890">Phone: +74 959 574890</a></li>
+                <li class="d-none d-xl-block"><a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a></li>
+                <li class="d-none d-xl-block"><a href="tel:+380931241843">Viber: +38 093 1241843</a></li>
+                <li class="d-none d-xl-block"><a href="mailto:Info@olgaevstratenko.com">E-mail: Info@olgaevstratenko.com</a></li>
+                <li><span>&copy; 2019 </span>
+                    <a href="https://www.koda-ltd.com/" target="_blank">Koda</a>
+                </li>
             </ul>
         </div>
     </footer>

@@ -27,7 +27,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-input:focus {
+a:focus,
+input:focus,
+button:focus {
   outline: none;
 }
 

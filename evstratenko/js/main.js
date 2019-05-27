@@ -1,7 +1,14 @@
 $(document).ready(function () {
 
 
+    $( window ).resize(function() {
+            removeSlideMargins();
+    });
+
+
     // -------------SLIDERS SETUP------------
+    removeSlideMargins();
+
     $('.top_banner_slider').slick({
         vertical: true,
         prevArrow: $('.prev'),
@@ -15,26 +22,15 @@ $(document).ready(function () {
         slidesToShow: 3,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
+                    slidesToShow: 2
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 575,
                 settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 1
                 }
             }
         ]
@@ -45,30 +41,31 @@ $(document).ready(function () {
         slidesToShow: 3,
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 575,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
                 }
             }
         ]
     });
+
+     function removeSlideMargins() {
+         var lastSlide;
+         if ($(window).width() < 992) {
+             lastSlide = parseInt($(".services_slider .slick-current").attr('data-slick-index')) + 1;
+         } else {
+             lastSlide = parseInt($(".services_slider .slick-current").attr('data-slick-index')) + 2;
+         }
+         $('.services_slider .slick-slide[data-slick-index="'+lastSlide+'"] .slide_box').css({marginRight: 0});
+    }
+
 
 
     // ----------- HEADER VIEW CHANGE---------
@@ -80,8 +77,19 @@ $(document).ready(function () {
             $('header').addClass('scrolled');
             $('.navbar-brand img').attr("src", "media/logo_black.svg")
         } else {
-            $('header').removeClass('scrolled')
+            $('header').removeClass('scrolled');
             $('.navbar-brand img').attr("src", "media/logo.svg")
         }
     });
+
+
+        $('#nav-icon1').click(function(){
+            $(this).toggleClass('open');
+        });
+
+        $("#show_contacts_btn").click(function () {
+            $("#contacts_menu").slideToggle("slow");
+            $(this).toggleClass("opened");
+        })
+
 });
