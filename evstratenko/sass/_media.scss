@@ -2,7 +2,27 @@
   .full_height {
     padding-bottom: 80px;
   }
+  .navbar .nav-item {
+    min-height: 73px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &:after {
+      height: 1px;
+      width: 100%;
+      content: "";
+      background: url("../media/menu_border.png") no-repeat;
+      position: absolute;
+      bottom: 0;
+      background-size: cover;
+      left: -16px;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
 }
+
 @media (max-width: 991px) {
   .top_header ul li a span {
     display: none;

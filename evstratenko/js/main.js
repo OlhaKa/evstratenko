@@ -85,6 +85,7 @@ $(document).ready(function () {
 
         $('#nav-icon1').click(function(){
             $(this).toggleClass('open');
+            $('.navbar').toggleClass('opened')
         });
 
         $("#show_contacts_btn").click(function () {
