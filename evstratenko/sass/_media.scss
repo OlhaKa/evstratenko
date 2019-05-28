@@ -21,6 +21,7 @@
       display: none;
     }
   }
+
 }
 
 @media (max-width: 991px) {
@@ -38,6 +39,17 @@
   .top_header .container {
     display: flex;
     justify-content: space-between;
+  }
+
+  body .clinics h3,
+  body .clinics p {
+    margin-bottom: 30px;
+  }
+
+  .about_page {
+    .about_box {
+      margin-top: 30px;
+    }
   }
 }
 @media (max-width: 767px) {
@@ -60,12 +72,64 @@
       align-self: flex-end;
     }
   }
+
+  .clinics h3 {
+    margin-top: 30px;
+  }
+
+  .soc_links {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 575px) {
   .navbar-expand-lg>.container {
     padding: 0;
   }
+
+  body .clinics {
+    padding: 180px 0 50px;
+    h3 {
+      margin: 15px 0;
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+    .page_title {
+      margin-bottom: 25px;
+    }
+  }
+  body .barcelona {
+    padding: 180px 0 50px;
+    .page_title {
+      margin-bottom: 25px;
+    }
+    h1 {
+      font-size: 24px;
+      line-height: 34px;
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 34px;
+      margin: 15px 0;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  body .contacts_page {
+    .contacts_item div {
+      margin-bottom: 37px;
+    }
+  }
+  body .about_page {
+    padding: 180px 0 50px;
+  }
 }
+
 
 @media (max-width: 420px) {
   .contacts_item div {
@@ -80,6 +144,9 @@
   .navbar-brand {
     margin-right: 70px;
   }
+  .nav-link.active {
+      border-bottom: 1px solid #100e12;
+  }
 }
 
 @media (min-width: 992px) {
@@ -88,7 +155,6 @@
     display: flex;
     align-items: center;
     padding-top: 130px;
-
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 5px;
@@ -97,11 +163,25 @@
   .top_header ul li a .fas {
     display: none;
   }
+  .barcelona {
+    h2 {
+      text-indent: calc(50% + 24px);
+    }
+    p {
+      -webkit-column-gap: 48px;
+      -moz-column-gap: 48px;
+      column-gap: 48px;
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2;
+    }
+  }
 }
 
 @media (min-width: 768px) {
 
 }
+
 
 @-moz-document url-prefix() {
   .nav_buttons {

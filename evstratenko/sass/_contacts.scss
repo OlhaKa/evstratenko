@@ -1,0 +1,73 @@
+.contacts_page {
+  background-color: #f2f2f2;
+  min-height: calc(100vh - 60px);
+  padding: 205px 0 50px;
+  color: #100e12;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  h2 {
+    font-family: 'Proxima Nova Semibold';
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -0.62px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .contact_header {
+    text-align: center;
+    margin-bottom: 66px;
+    p {
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+  }
+  .contacts_item {
+    div {
+      margin-bottom: 48px;
+    }
+    span {
+      font-weight: 500;
+      display: block;
+    }
+    a {
+      color: #100e12;
+    }
+  }
+  form {
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    input, textarea {
+      background-color: #f2f2f2;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid rgba(16, 14, 18, 0.8);
+      color: #100e12;
+      font-size: 14px;
+      border-radius: 0;
+      margin-bottom: 30px;
+    }
+    .btn-send {
+      width: 175px;
+      height: 40px;
+      background-color: #31708f;
+      border-radius: 20px;
+      border: none;
+      font-size: 14px;
+      color: #ffffff;
+      text-transform: uppercase;
+      align-self: flex-end;
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+  .soc_links a {
+    color: #100e12;
+    margin-right: 18px;
+  }
+}

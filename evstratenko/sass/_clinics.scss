@@ -1,0 +1,93 @@
+.contacts_nav {
+  background-color: #ffffff;
+  padding-bottom: 40px;
+  #navbarNav .navbar-nav li a {
+    color: #100e12;
+  }
+  #nav-icon1 span {
+    background: #100e12;
+  }
+}
+.scrolled {
+  .contacts_nav {
+    padding-bottom: 0;
+  }
+}
+
+.clinics {
+  background-color: #f2f2f2;
+  padding: 235px 0 110px;
+  .page_title {
+    margin-bottom: 82px;
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+  h3 {
+    color: #1a1a1a;
+    font-family: 'Proxima Nova';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 34px;
+    margin-bottom: 50px;
+  }
+  p {
+    color: #9b9b9b;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 50px;
+  }
+  .read_more_link {
+    width: 88px;
+    border-bottom: 2px solid #31708f;
+    a {
+      color: #31708f;
+    }
+  }
+  .row  {
+    margin-bottom: 85px;
+  }
+}
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 25px;
+  font-size: 18px;
+  .counter {
+    margin-right: 40px;
+    .current_page {
+      color: #100e12;
+      padding: 5px;
+      margin-right: 20px;
+    }
+  }
+  .total_pages {
+    color: #100e12;
+    position: relative;
+    padding: 5px;
+    margin-left: 20px;
+    &:before {
+      content: "";
+      width: 1px;
+      height: 67px;
+      background-color: #100e12;
+      position: absolute;
+      left: -20px;
+      top: -22px;
+    }
+  }
+  .pages_nav a {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid #818082;
+    color: #100e12;
+    padding: 3px 9px;
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
+}

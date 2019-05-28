@@ -75,22 +75,21 @@ $(document).ready(function () {
 
         if (scroll > 0) {
             $('header').addClass('scrolled');
-            $('.navbar-brand img').attr("src", "media/logo_black.svg")
+            $('#main_page_logo img').attr("src", "media/logo_black.svg")
         } else {
             $('header').removeClass('scrolled');
-            $('.navbar-brand img').attr("src", "media/logo.svg")
+            $('#main_page_logo img').attr("src", "media/logo.svg")
         }
     });
 
 
         $('#nav-icon1').click(function(){
             $(this).toggleClass('open');
-            $('.navbar').toggleClass('opened')
+            $('.navbar').toggleClass('opened');
         });
 
         $("#show_contacts_btn").click(function () {
             $("#contacts_menu").slideToggle("slow");
             $(this).toggleClass("opened");
-        })
-
+        });
 });

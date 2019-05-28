@@ -1,0 +1,29 @@
+.about_page {
+  padding: 235px 0 110px;
+  .page_title {
+    position: absolute;
+    top: 0;
+  }
+
+  .video_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about_box {
+    font-family: 'Proxima Nova';
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: -1.98px;
+    color: #100e12;
+    line-height: 48px;
+  }
+  .video_wrap {
+    max-width: 100%;
+    width: 490px;
+    height: 367px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+  }
+}
