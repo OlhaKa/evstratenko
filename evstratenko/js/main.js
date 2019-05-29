@@ -9,10 +9,42 @@ $(document).ready(function () {
     // -------------SLIDERS SETUP------------
     removeSlideMargins();
 
-    $('.top_banner_slider').slick({
+    var topBannerSlider = $('.top_banner_slider');
+    var currentSlideNum = $('.current_slide');
+
+    function showSliderAnimation() {
+        $('.slick-current .devider').addClass("scaled");
+        $('.slick-current .top_title span').css({ "transform": "none"});
+        $('.slick-current .btm_title span').css({"transform": "none"});
+    }
+    function hideSliderAnimation() {
+        $('.slick-current .devider').removeClass("scaled");
+        $('.slick-current .top_title span').css({ transform: "translateY(150px) skew(0deg, 25deg)" });
+        $('.slick-current .btm_title span').css({"transform": "translateY(-160px) skew(0deg, -25deg)"});
+    }
+
+    topBannerSlider.on('init', function(event, slick){
+        $(".slide_count").text(slick.slideCount);
+        currentSlideNum.text(1);
+        setTimeout(function () {
+            showSliderAnimation()
+        },1000)
+    });
+
+    topBannerSlider.slick({
         vertical: true,
         prevArrow: $('.prev'),
         nextArrow: $('.next')
+    });
+
+    topBannerSlider.on('afterChange', function(slick, currentSlide){
+        var i = (currentSlide.currentSlide ? currentSlide.currentSlide : 0) + 1;
+        currentSlideNum.text(i);
+        showSliderAnimation()
+    });
+
+    topBannerSlider.on('beforeChange', function(){
+        hideSliderAnimation()
     });
 
     $('.clinics_slider').slick({

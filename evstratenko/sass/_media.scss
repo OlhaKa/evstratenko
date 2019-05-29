@@ -21,7 +21,10 @@
       display: none;
     }
   }
-
+  .navbar-expand-xl>.container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -186,5 +189,11 @@
 @-moz-document url-prefix() {
   .nav_buttons {
     margin-top: 50px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .top_title {
+    color: #ffffff;
   }
 }
