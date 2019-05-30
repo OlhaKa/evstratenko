@@ -144,4 +144,7 @@ $(document).ready(function () {
             $("#contacts_menu").slideToggle("slow");
             $(this).toggleClass("opened");
         });
+
 });
+
+

@@ -37,7 +37,14 @@ textarea:focus {
   outline: none;
 }
 
-//---------HEADER. MAIN PAGE-----------
+.slick-arrow {
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+//---------HEADER-----------
 header {
   position: fixed;
   top: 0;

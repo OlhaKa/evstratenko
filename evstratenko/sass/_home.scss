@@ -318,7 +318,7 @@
       &:focus {
         border-bottom: 3px solid #8fc1e2;
       }
-      &:invalid {
+      &.invalid {
         border-bottom: 1px solid red;
       }
     }
