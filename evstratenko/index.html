@@ -197,10 +197,22 @@
                 </div>
                 <div class="col-md-7">
                     <form action="">
-                        <input type="text" placeholder="Your name">
-                        <input type="email" placeholder="Email">
-                        <input type="tel" placeholder="Phone">
-                        <textarea name="" id="" cols="30" rows="5" placeholder="Your message"></textarea>
+                        <div class="form-item">
+                            <input id="name" name="name" type="text" placeholder="Your name">
+                            <label for="name">Your name</label>
+                        </div>
+                        <div class="form-item">
+                            <input type="email" placeholder="Email" id="email" name="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-item">
+                            <input pattern="(\+?\d[-]*){10,13}"
+                                    type="tel" placeholder="Phone" id="phone" name="phone">
+                            <label for="phone" >Phone</label>
+                        </div>
+                        <div class="form-item">
+                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message"></textarea><label for="message">Your message</label>
+                        </div>
                         <button type="submit" class="btn-send">
                             <span>Send</span>
                             <img src="media/send_icon.svg" alt="">
@@ -217,6 +229,7 @@
             </div>
             <div class="clinics_slider">
                 <div class="clinics_sl_item">
+                    <a href="">
                     <div class="slide_box">
                         <div class="img_wrap">
                             <img src="media/clinics/Teknon_Hospital2.png" alt="">
@@ -225,8 +238,10 @@
                         <p>As one of the leading medical facilities in Barcelona, Teknon Hospital is one of our main
                             partners and reference to provide our clients with the best.</p>
                     </div>
+                    </a>
                 </div>
                 <div class="clinics_sl_item">
+                    <a href="">
                     <div class="slide_box">
                         <div class="img_wrap">
                             <img src="media/clinics/Hospital_de_la_Santa_Creu_i_Sant_Pau2.png" alt="">
@@ -236,8 +251,10 @@
                             services and ensure the quality standards of each treatment
                             will be optimum. </p>
                     </div>
+                    </a>
                 </div>
                 <div class="clinics_sl_item">
+                    <a href="">
                     <div class="slide_box">
                         <div class="img_wrap">
                             <img src="media/clinics/Barraquer_Ophtalmology_Center2.png" alt="">
@@ -248,8 +265,10 @@
                             distinguished by offering a comprehensive ophthalmo- logic assistance to patients from
                             all over the world.</p>
                     </div>
+                    </a>
                 </div>
                 <div class="clinics_sl_item">
+                    <a href="">
                     <div class="slide_box">
                         <div class="img_wrap">
                             <img src="media/clinics/Hospital_de_la_Santa_Creu_i_Sant_Pau2.png" alt="">
@@ -259,8 +278,10 @@
                             services and ensure the quality standards of each treatment
                             will be optimum. </p>
                     </div>
+                    </a>
                 </div>
                 <div class="clinics_sl_item">
+                    <a href="">
                     <div class="slide_box">
                         <div class="img_wrap">
                             <img src="media/clinics/Barraquer_Ophtalmology_Center2.png" alt="">
@@ -271,8 +292,10 @@
                             distinguished by offering a comprehensive ophthalmo- logic assistance to patients from
                             all over the world.</p>
                     </div>
+                    </a>
                 </div>
                 <div class="clinics_sl_item">
+                    <a href="">
                     <div class="slide_box">
                         <div class="img_wrap">
                             <img src="media/clinics/Teknon_Hospital2.png" alt="">
@@ -281,6 +304,7 @@
                         <p>As one of the leading medical facilities in Barcelona, Teknon Hospital is one of our main
                             partners and reference to provide our clients with the best.</p>
                     </div>
+                    </a>
                 </div>
             </div>
             <div class="nav_buttons">
@@ -423,7 +447,7 @@
             <div class="section_title">
                 Doctors
             </div>
-            <div class="clinics_slider">
+            <div class="doctors_slider">
                 <div class="clinics_sl_item">
                     <div class="slide_box">
                         <div class="img_wrap">
@@ -481,10 +505,10 @@
                     <a href="">Read more</a>
                 </div>
                 <div>
-                    <div class="prev_clinic">
+                    <div class="prev_doctor">
                         <i class="fas fa-chevron-left"></i>
                     </div>
-                    <div class="next_clinic">
+                    <div class="next_doctor">
                         <i class="fas fa-chevron-right"></i>
                     </div>
                 </div>

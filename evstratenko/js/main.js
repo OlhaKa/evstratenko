@@ -50,7 +50,6 @@ $(document).ready(function () {
     $('.clinics_slider').slick({
         prevArrow: $('.prev_clinic'),
         nextArrow: $('.next_clinic'),
-        adaptiveHeight: false,
         slidesToShow: 3,
         responsive: [
             {
@@ -83,6 +82,27 @@ $(document).ready(function () {
                 breakpoint: 575,
                 settings: {
                     slidesToShow: 1,
+                }
+            }
+        ]
+    });
+
+    $('.doctors_slider').slick({
+        prevArrow: $('.prev_doctor'),
+        nextArrow: $('.next_doctor'),
+        adaptiveHeight: false,
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1
                 }
             }
         ]
