@@ -25,35 +25,39 @@
     <div class="top_header">
         <div class="container">
             <!--                mobile view-->
-            <div class="btn-group d-lg-none">
+            <div class="btn-group d-md-none">
                 <a href="tel:+74959574890">Phone: +74 959 574890</a>
                 <span id="show_contacts_btn"></span>
-                <div class="dropdown-menu" id="contacts_menu">
-                    <a href="tel:+74959574890">Phone: +74 959 574890</a>
-                    <a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a>
-                    <a href="tel:+380931241843">Viber: +38 093 1241843</a>
-                </div>
+                <ul class="dropdown-menu" id="contacts_menu">
+                    <div class="container">
+                        <li><a href="tel:+74959574890">Phone: +74 959 574890</a></li>
+                        <li><a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a></li>
+                        <li><a href="tel:+380931241843">Viber: +38 093 1241843</a></li>
+                    </div>
+                </ul>
             </div>
             <!--                mobile view end-->
+            <!--                desctop view-->
             <ul>
-                <li class="d-none d-lg-block"><a href="tel:+74959574890">Phone: +74 959 574890</a></li>
-                <li class="d-none d-lg-block"><a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a></li>
-                <li class="d-none d-lg-block"><a href="tel:+380931241843">Viber: +38 093 1241843</a></li>
+                <li class="d-none d-md-block"><a href="tel:+74959574890">Phone: +74 959 574890</a></li>
+                <li class="d-none d-md-block"><a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a></li>
+                <li class="d-none d-md-block"><a href="tel:+380931241843">Viber: +38 093 1241843</a></li>
                 <li><a href="mailto:Info@olgaevstratenko.com">
                     <span>E-mail: Info@olgaevstratenko.com</span>
                     <i class="fas fa-envelope"></i>
                 </a></li>
             </ul>
+            <!--                desctop view end -->
         </div>
     </div>
-    <nav class="navbar navbar-expand-xl navbar-light contacts_nav">
+    <nav class="navbar navbar-expand-xl navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" id="main_page_logo">
                 <img src="media/logo_black.svg" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <div id="nav-icon1">
+                <div id="nav-icon2">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -77,7 +81,7 @@
                         <a class="nav-link" href="#">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Contacts</a>
+                        <a class="nav-link" href="#">Contacts</a>
                     </li>
                     <li class="nav-item location">
                         <a href="">En | </a>
