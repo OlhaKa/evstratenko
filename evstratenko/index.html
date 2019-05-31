@@ -26,31 +26,36 @@
     <div class="top_header">
         <div class="container">
             <!--                mobile view-->
-            <div class="btn-group d-lg-none">
+            <div class="btn-group d-md-none">
                 <a href="tel:+74959574890">Phone: +74 959 574890</a>
                 <span id="show_contacts_btn"></span>
-                <div class="dropdown-menu" id="contacts_menu">
-                    <a href="tel:+74959574890">Phone: +74 959 574890</a>
-                    <a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a>
-                    <a href="tel:+380931241843">Viber: +38 093 1241843</a>
-                </div>
+                <ul class="dropdown-menu" id="contacts_menu">
+                    <div class="container">
+                        <li><a href="tel:+74959574890">Phone: +74 959 574890</a></li>
+                        <li><a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a></li>
+                        <li><a href="tel:+380931241843">Viber: +38 093 1241843</a></li>
+                    </div>
+                </ul>
             </div>
             <!--                mobile view end-->
+            <!--                desctop view-->
             <ul>
-                <li class="d-none d-lg-block"><a href="tel:+74959574890">Phone: +74 959 574890</a></li>
-                <li class="d-none d-lg-block"><a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a></li>
-                <li class="d-none d-lg-block"><a href="tel:+380931241843">Viber: +38 093 1241843</a></li>
+                <li class="d-none d-md-block"><a href="tel:+74959574890">Phone: +74 959 574890</a></li>
+                <li class="d-none d-md-block"><a href="tel:+34677186265">Phone / Whatsapp: +34 677 186265</a></li>
+                <li class="d-none d-md-block"><a href="tel:+380931241843">Viber: +38 093 1241843</a></li>
                 <li><a href="mailto:Info@olgaevstratenko.com">
                     <span>E-mail: Info@olgaevstratenko.com</span>
                     <i class="fas fa-envelope"></i>
                 </a></li>
             </ul>
+            <!--                desctop view end -->
         </div>
     </div>
     <nav class="navbar navbar-expand-xl navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#" id="main_page_logo">
-                <img src="media/logo.svg" alt="">
+                <img src="media/logo.svg" alt="" class="logo-light">
+                <img src="media/logo_black.svg" alt="" class="logo-dark">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -223,7 +228,7 @@
                             <label for="phone" >Phone</label>
                         </div>
                         <div class="form-item">
-                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message"></textarea><label for="message">Your message</label>
+                            <textarea name="message" id="message" cols="30" rows="4" placeholder="Your message"></textarea><label for="message">Your message</label>
                         </div>
                         <button type="submit" class="btn-send">
                             <span>Send</span>
@@ -462,6 +467,7 @@
             <div class="doctors_slider">
                 <div class="clinics_sl_item">
                     <div class="slide_box">
+                        <a href="">
                         <div class="img_wrap">
                             <img src="media/doctors/Doctor-Paloma-head-of-IQC.png" alt="">
                         </div>
@@ -471,10 +477,12 @@
 
                                 Since 1997 he directs one of the plastic and cosmetic surgery teams at the Teknon Medical Center.</p>
                         </div>
+                        </a>
                     </div>
                 </div>
                 <div class="clinics_sl_item">
                     <div class="slide_box">
+                        <a href="">
                         <div class="img_wrap">
                             <img src="media/doctors/dr_juan_antonio_pena.png" alt="">
                         </div>
@@ -485,10 +493,12 @@
                                 acreditado con un Diploma Universitario en Cirugía Laparoscópica por la Universidad de Estrasburgo y como cirujano de cónsola en cirugía robótica da
                                 Vinci (Intuitive).</p>
                         </div>
+                        </a>
                     </div>
                 </div>
                 <div class="clinics_sl_item">
                     <div class="slide_box">
+                        <a href="">
                         <div class="img_wrap">
                             <img src="media/doctors/DraClara Buitrago.png" alt="">
                         </div>
@@ -496,10 +506,12 @@
                         <p>Licenciada en Medicina, Especialista en Medicina de Familia, Máster en Medicina Estética y Máster en Trasplante Capilar. Cuenta con una amplia
                             experiencia en el ámbito de la medicina estética y capilar con un profundo conocimiento de diferentes técnicas avanzadas como Coolsculpting, mesoterapia
                             o PRP.</p>
+                        </a>
                     </div>
                 </div>
                 <div class="clinics_sl_item">
                     <div class="slide_box">
+                        <a href="">
                         <div class="img_wrap">
                             <img src="media/doctors/Doctor-Paloma-head-of-IQC.png" alt="">
                         </div>
@@ -509,6 +521,7 @@
 
                                 Since 1997 he directs one of the plastic and cosmetic surgery teams at the Teknon Medical Center.</p>
                         </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -534,7 +547,7 @@
         <ul>
             <li>
                 <a class="cont_anchor" href="#contacts">
-                    <img src="media/send_icon_white.svg" alt="">
+                    <img src="media/comment.svg" alt="">
                 </a>
             </li>
             <li class="d-none d-xl-block"><a href="tel:+74959574890">Phone: +74 959 574890</a></li>
