@@ -144,29 +144,41 @@ $(document).ready(function () {
 
     $('#nav-icon1').click(function () {
         var scroll = $(window).scrollTop();
-        console.log(scroll)
         $(this).toggleClass('open');
         $('.navbar').toggleClass('opened');
-        if ($('.navbar').hasClass('opened')) {   //открыт в любом месте
+        if ($('.navbar').hasClass('opened')) {   //open menu on any scroll position
             $('.logo-dark').hide();
             $('.logo-light').show(500);
-        } else if (!($('.navbar').hasClass('opened')) && scroll === 0) {   //закрыли наверху
+        } else if (!($('.navbar').hasClass('opened')) && scroll === 0) {   //close on top
             $('.logo-dark').hide();
             $('.logo-light').show(500);
-        } else if (!($('.navbar').hasClass('opened')) && scroll > 0) {  //закрыли внизу
+        } else if (!($('.navbar').hasClass('opened')) && scroll > 0) {  //close on bottom
             $('.logo-light').hide();
             $('.logo-dark').show(500);
         }
-        // else {
-        //     $('.logo-light').hide();
-        //     $('.logo-dark').show(500);
-        // }
+    });
+
+
+    $('#nav-icon2').click(function () {
+        $(this).toggleClass('open');
+        $('.navbar').toggleClass('opened');
     });
 
     $("#show_contacts_btn").click(function () {
         $("#contacts_menu").slideToggle("slow");
         $(this).toggleClass("opened");
     });
+
+
+    // --------- CONTACTS HEADER ANIMATION --------
+
+$("#contacts-anchor").click(function() {
+    console.log(123)
+    $(".contacts_page h2").addClass('scale-in-center');
+    setTimeout(function() {
+        $(".contacts_page h2").removeClass('scale-in-center');
+    }, 1500)
+})
 
 });
 

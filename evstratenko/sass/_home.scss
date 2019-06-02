@@ -6,6 +6,18 @@
   padding-top: 80px;
 }
 
+body .home-header {
+  .navbar {
+    background-color: transparent;
+    li a {
+      color: #ffffff;
+    }
+  }
+  #nav-icon1 span {
+    background: #ffffff;
+  }
+}
+
 //----------SECTION 1---------
 .section-1 {
   //height: 100vh;
