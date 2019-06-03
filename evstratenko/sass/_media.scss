@@ -54,6 +54,15 @@
       margin-top: 30px;
     }
   }
+  .order-item .col-lg-3 {
+
+    margin-left: -3vw;
+    span {
+      margin-bottom: 34px;
+      margin-top: 15px;
+      display: inline-block;
+    }
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -84,7 +93,9 @@
   .soc_links {
     margin-bottom: 50px;
   }
-
+  body .modal .close {
+    right: 0;
+  }
 }
 @media (max-width: 575px) {
   .navbar .nav-item:after {
@@ -136,6 +147,26 @@
   body .about_page {
     padding: 180px 0 50px;
   }
+  body .how-it-works {
+    padding: 180px 0 50px;
+
+    .col-2 {
+      font-size: 50px;
+      line-height: 50px;
+    }
+    .col-10 {
+      font-size: 30px;
+      line-height: 40px;
+      span {
+        padding-bottom: 30px;
+      }
+    }
+  }
+  body .modal .close span {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+  }
 }
 
 
@@ -145,6 +176,17 @@
   }
   .navbar-brand img {
     max-width: 60vw;
+  }
+
+  body .modal {
+    .contact_header h2 {
+      font-size: 54px;
+      margin-bottom: 10px;
+    }
+    .close {
+      top: 5px;
+      right: -5px;
+    }
   }
 }
 
@@ -183,6 +225,9 @@
       -moz-column-count: 2;
       column-count: 2;
     }
+  }
+  .order-item {
+    margin-top: 68px;
   }
 }
 

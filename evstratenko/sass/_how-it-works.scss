@@ -1,0 +1,42 @@
+.how-it-works {
+  padding: 235px 0 110px;
+  .page_title {
+    margin-bottom: 65px;
+  }
+  h1 {
+    color: #100e12;
+    font-family: "Proxima Nova";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.98px;
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.order-item {
+  .col-2 {
+    color: #100e12;
+    font-family: "Proxima Nova";
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 700;
+    letter-spacing: -5.5px;
+  }
+  .col-10,
+  .col-lg-3 {
+    color: #100e12;
+    font-family: "Proxima Nova";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.98px;
+  }
+  .col-10 span {
+    display: inline-block;
+    border-bottom: 1px solid #100e12;
+    padding-bottom: 60px;
+  }
+}
