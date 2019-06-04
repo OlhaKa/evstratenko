@@ -1,0 +1,49 @@
+.review-details {
+  padding: 235px 0 110px;
+  .page_title {
+    color: #100e12;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 2.25px;
+    margin-bottom: 105px;
+  }
+  img {
+    max-width: 100%;
+    width: 100%;
+  }
+  h1 {
+    color: #100e12;
+    font-family: "Proxima Nova";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.98px;
+    margin-bottom: 69px;
+  }
+  p {
+    color: #9b9b9b;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 45px;
+  }
+  .back_btn {
+    text-align: right;
+    .fas {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      border: 1px solid #818082;
+      color: #100e12;
+      padding: 7px 11px 7px 0;
+      margin-right: 21px;
+    }
+    a {
+      color: rgba(16, 14, 18, 0.5);
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+

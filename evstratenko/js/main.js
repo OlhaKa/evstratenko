@@ -178,7 +178,15 @@ $("#contacts-anchor").click(function() {
     setTimeout(function() {
         $(".contacts_page h2").removeClass('scale-in-center');
     }, 1500)
-})
+});
+
+// ---------- ZOOM CUSTOMER REVIEW----------
+
+    $(".review-thumb").fancybox({
+        fitToView: false,
+        maxWidth: "100%",
+        width: "1200"
+    });
 
 });
 
