@@ -177,6 +177,23 @@
       margin-bottom: 25px;
     }
   }
+  .section-4 .slide_box {
+    min-height: auto;
+  }
+  .section-5 .slide_box {
+    min-height: 270px;
+  }
+  body .cont_anchor {
+    bottom: 10px;
+    right: 20px;
+  }
+  body .top_banner_slider .banner_slide .top_title {
+    font-size: 55px;
+  }
+  body .top_banner_slider .banner_slide .btm_title {
+    font-size: 55px;
+    bottom: 170px;
+  }
 }
 
 
@@ -202,10 +219,13 @@
 
 @media (min-width: 1200px) {
   .navbar-brand {
-    margin-right: 70px;
+    margin-right: 50px;
   }
   .nav-link.active {
       border-bottom: 1px solid #100e12;
+  }
+  .location {
+    margin-left: 25px;
   }
 }
 
@@ -245,14 +265,13 @@
   .top_header ul {
     width: 100%;
   }
-}
-
-
-@-moz-document url-prefix() {
-  .nav_buttons {
-    margin-top: 50px;
+  @-moz-document url-prefix() {
+    .nav_buttons {
+      margin-top: 50px;
+    }
   }
 }
+
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .top_title {

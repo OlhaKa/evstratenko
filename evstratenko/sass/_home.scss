@@ -9,8 +9,12 @@
 body .home-header {
   .navbar {
     background-color: transparent;
-    li a {
+    li a,
+    .location a{
       color: #ffffff;
+      &:after {
+        color: #ffffff;
+      }
     }
   }
   #nav-icon1 span {
@@ -83,11 +87,14 @@ body .home-header {
 }
 
 .top_banner_slider {
+  height: 100vh;
+  max-height: 100vh !important;
   .banner_slide {
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
     position: relative;
+    border: none;
 
     &:before {
       position: absolute;
@@ -103,7 +110,7 @@ body .home-header {
 
     .container {
       width: 100%;
-      height: 100%;
+      height: 100vh;
       position: relative;
     }
 
@@ -369,7 +376,7 @@ body .home-header {
     letter-spacing: 2px;
     margin-bottom: 82px;
   }
-  .clinics_sl_item a:hover {
+  .clinics_sl_item:hover a {
     text-decoration: none;
   }
   .slide_box {
@@ -378,7 +385,7 @@ body .home-header {
     margin: 0 15px;
     box-shadow: 0 5px 13px rgba(0, 0, 0, 0.11);
     background-color: #ffffff;
-
+    padding-bottom: 20px;
     .img_wrap {
       height: 40%;
 
@@ -401,14 +408,22 @@ body .home-header {
     p {
       color: #9b9b9b;
       line-height: 24px;
-      margin: 0 30px 60px 30px;
+      margin: 0 30px 0 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 8;
+      word-wrap: break-word;
+      max-height: 192px;
+      padding: 0 30px 60px 30px;
     }
   }
 
   .nav_buttons {
     display: flex;
     justify-content: space-between;
-
+    margin-top: 40px;
     .read_more_link {
       width: 88px;
       border-bottom: 2px solid #31708f;
@@ -522,6 +537,9 @@ body .home-header {
   background-color: #f2f2f2;
   padding-bottom: 54px;
 
+  .clinics_sl_item:hover a {
+    text-decoration: none;
+  }
   .section_title {
     font-weight: 500;
     letter-spacing: 2px;
@@ -577,7 +595,7 @@ body .home-header {
   .nav_buttons {
     display: flex;
     justify-content: space-between;
-
+    margin-top: 40px;
     .read_more_link {
       width: 88px;
       border-bottom: 2px solid #31708f;
@@ -607,3 +625,13 @@ body .home-header {
   }
 }
 
+.cont_anchor a {
+  width: 50px;
+  height: 40px;
+  border-radius: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}

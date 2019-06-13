@@ -68,6 +68,7 @@ $(document).ready(function () {
         ]
     });
     $('.services_slider').slick({
+        rows: 2,
         prevArrow: $('.prev_service'),
         nextArrow: $('.next_service'),
         slidesToShow: 3,
@@ -173,7 +174,6 @@ $(document).ready(function () {
     // --------- CONTACTS HEADER ANIMATION --------
 
 $("#contacts-anchor").click(function() {
-    console.log(123)
     $(".contacts_page h2").addClass('scale-in-center');
     setTimeout(function() {
         $(".contacts_page h2").removeClass('scale-in-center');

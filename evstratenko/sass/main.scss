@@ -83,8 +83,9 @@ header {
   padding-bottom: 32px;
   &.opened {
     background-color: rgba(0, 0, 0, 0.8) !important;
-    .navbar-nav li a {
-      color: #ffffff !important;
+    .navbar-nav li a,
+    .location a {
+      color: #ffffff;
     }
     .logo {
       .logo-white {
@@ -103,6 +104,26 @@ header {
 .location a {
   color: #100e12;
 }
+
+.location {
+  a{
+    &:first-child {
+      margin-right: 10px;
+      position: relative;
+      &:after {
+        content: "|";
+        display: inline-block;
+        position: absolute;
+        color: #100e12;
+        right: -7px;
+        top: -1px;
+      }
+    }
+    &:last-child {
+      margin-left: 5px;
+    }
+  }
+}
 .logo {
   .logo-white {
     display: none;
@@ -119,6 +140,15 @@ header {
   }
 }
 
+.location {
+  padding-top: 28px;
+  color: #ffffff;
+  display: flex;
+}
+
+body .location a.active {
+  color: #8fc1e2 !important;
+}
 
 #navbarNav .navbar-nav {
   width: 100%;
@@ -129,12 +159,6 @@ header {
       
       font-size: 18px;
       white-space: nowrap;
-    }
-  }
-  .location {
-    padding: 8px;
-    a.active {
-      color: #8fc1e2 !important;
     }
   }
 }
@@ -316,7 +340,8 @@ header.scrolled {
     }
     &.opened {
       background-color: rgba(0, 0, 0, 0.8);
-      .navbar-nav li a {
+      .navbar-nav li a,
+      .location a {
         color: #ffffff !important;
       }
     }
@@ -325,11 +350,13 @@ header.scrolled {
         color: #100e12;
       }
     }
-
     .location {
       padding: 8px;
-      a.active {
-        color: #8fc1e2 !important;
+      a {
+        color: #100e12;
+        &.active {
+          color: #8fc1e2 !important;
+        }
       }
     }
   }
