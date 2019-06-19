@@ -55,6 +55,11 @@ header {
   left: 0;
   z-index: 9;
   width: 100%;
+  &:not(.home-header) {
+    .navbar-nav li a:before {
+      background: #100e12;
+    }
+  }
 }
 .top_header {
   min-height: 47px;
@@ -73,6 +78,10 @@ header {
         font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.56px;
+        &:hover {
+          text-decoration: none;
+          color: #333333;
+        }
       }
     }
   }
@@ -82,7 +91,9 @@ header {
   background-color: #ffffff;
   padding-bottom: 32px;
   &.opened {
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    height: calc(100vh - 47px);
+    overflow-y: auto;
     .navbar-nav li a,
     .location a {
       color: #ffffff;
@@ -104,6 +115,21 @@ header {
 .location a {
   color: #100e12;
 }
+
+  .nav-link.active-link {
+    position: relative;
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      width: 100%;
+      background-color: #100e12;
+      height: 1px;
+    }
+
+  }
 
 .location {
   a{
@@ -150,18 +176,36 @@ body .location a.active {
   color: #8fc1e2 !important;
 }
 
+
 #navbarNav .navbar-nav {
   width: 100%;
   justify-content: space-between;
   padding-top: 28px;
   li {
     a {
-      
       font-size: 18px;
       white-space: nowrap;
+      position: relative;
+      &:before {
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        overflow: hidden;
+        max-width: 0;
+        content: '';
+        -webkit-transition: max-width 0.5s;
+        -moz-transition: max-width 0.5s;
+        transition: max-width 0.5s;
+      }
+      &:hover:before {
+        max-width: 100%;
+      }
     }
   }
 }
+
 .top_header ul li a .fas {
   font-size: 23px;
 }
@@ -188,6 +232,11 @@ body .location a.active {
   &.open {
     margin-top: 15px;
     height: 25px;
+  }
+  &:hover {
+    span {
+      background: #3b5998;
+    }
   }
 }
 
@@ -278,7 +327,7 @@ body .location a.active {
       &:not(:last-child):after {
         height: 1px;
         width: 100vw;
-        content: "";
+         content: "";
         background: url(../media/menu_border.png) no-repeat;
         position: absolute;
         bottom: 0;
@@ -348,6 +397,9 @@ header.scrolled {
     #navbarNav .navbar-nav {
       li a {
         color: #100e12;
+        &:before {
+          background: #100e12;
+        }
       }
     }
     .location {
@@ -425,11 +477,39 @@ footer {
   letter-spacing: 2px;
 }
 
+.read_more_link {
+  width: 88px;
+  a {
+    color: #31708f;
+  }
+}
+
 .read_more_link a {
+  border-bottom: 2px solid #31708f;
+  color: #31708f;
+  text-shadow: none;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
   font-size: 18px;
   font-weight: 500;
-  &:hover {
-    text-decoration: none;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-width: 0;
+    border-bottom: 2px solid #100e12;
+    color: #100e12;
+    content: attr(data-hover);
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+    white-space: nowrap;
+  }
+  &:hover:before {
+    max-width: 100%;
   }
 }
 
@@ -497,6 +577,15 @@ background-color: transparent;
     a {
       color: #ffffff;
       margin-right: 18px;
+      .fab {
+        transform: scale(1);
+        transition: all 0.1s ease;
+
+        &:hover {
+          transform: scale(1.5);
+          text-shadow: 0 0 8px #ffffff;
+        }
+      }
     }
   }
   form {
@@ -587,8 +676,30 @@ background-color: transparent;
       text-transform: uppercase;
       align-self: flex-end;
       margin-top: 30px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s;
+      &:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #31708f;
+        position: absolute;
+        top: 0;
+        left: -175px;
+        transition: all 0.5s;
+      }
+      &:hover:before {
+        left: 0;
+      }
       img {
         margin-left: 10px;
+        z-index: 2;
+        position: relative;
+      }
+      span {
+        z-index: 2;
+        position: relative;
       }
     }
   }

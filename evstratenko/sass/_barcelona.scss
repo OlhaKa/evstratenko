@@ -19,10 +19,14 @@
 
     margin: 57px 0 61px;
   }
-  p {
+  p, span {
     color: #9b9b9b;
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
+  }
+  span {
+    display: block;
+    margin-bottom: 1em;
   }
 }
