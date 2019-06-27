@@ -14,6 +14,7 @@ body .home-header {
     .location a {
       color: #ffffff;
       position: relative;
+
       &:after {
         color: #ffffff;
       }
@@ -23,6 +24,7 @@ body .home-header {
   #nav-icon1 span {
     background: #ffffff;
   }
+
   &:not(.scrolled) li a:before {
     background: #ffffff;
   }
@@ -54,8 +56,10 @@ body .home-header {
         font-size: 14px;
         color: #fff;
       }
+
       &:hover {
         border: 1px solid rgba(255, 255, 255, 1);
+
         .fas {
           font-size: 18px;
         }
@@ -282,7 +286,11 @@ body .home-header {
         }
       }
 
-
+      .fa-instagram {
+        font-size: 18px;
+        line-height: 18px;
+        transform: translateY(1px);
+      }
     }
   }
 
@@ -382,26 +390,21 @@ body .home-header {
       align-self: flex-end;
       margin-top: 30px;
       position: relative;
-      overflow: hidden;
-      transition: all 0.5s;
-      &:before{
-        content: "";
-        width: 100%;
-        height: 100%;
-        background-color: #31708f;
-        position: absolute;
-        top: 0;
-        left: -175px;
-        transition: all 0.5s;
+      will-change: transform;
+      transform: scale(1);
+      transition: all 0.2s;
+      &:hover {
+        background-color: #ffffff;
+        transform: scale(1.05);
+        box-shadow: 0 0 8px #fff;
       }
-      &:hover:before {
-        left: 0;
-      }
+
       img {
         margin-left: 10px;
         z-index: 2;
         position: relative;
       }
+
       span {
         z-index: 2;
         position: relative;
@@ -436,12 +439,13 @@ body .home-header {
     transition: all 0.2s;
 
     .img_wrap {
-      height: 40%;
+      height: 260px;
+      width: 100%;
 
       img {
         width: 100%;
-        max-height: 100%;
-        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
     }
 
@@ -500,6 +504,7 @@ body .home-header {
 
     .next_clinic {
       margin-left: 20px;
+
       .fas {
         margin-left: 11px;
       }
@@ -539,12 +544,14 @@ body .home-header {
     display: flex;
     align-items: center;
     transition: all 0.2s;
+
     a {
       color: #ffffff;
       font-family: "Proxima Nova";
       font-size: 36px;
       font-weight: 700;
       line-height: 48px;
+
       &:hover {
         text-decoration: none;
       }
@@ -583,6 +590,7 @@ body .home-header {
         margin-left: 9px;
         margin-top: 7px;
       }
+
       &:hover {
         color: #999999;
         border: 1px solid #999999;
@@ -591,6 +599,7 @@ body .home-header {
 
     .next_service {
       margin-left: 20px;
+
       .fas {
         margin-left: 11px;
       }
@@ -621,6 +630,7 @@ body .home-header {
     box-shadow: 0 5px 13px rgba(0, 0, 0, 0.11);
     background-color: #ffffff;
     transition: all 0.2s;
+
     a:hover {
       text-decoration: none;
     }
@@ -660,6 +670,7 @@ body .home-header {
       color: #9b9b9b;
       padding: 0 30px;
     }
+
     &:hover {
       transform: perspective(200px) translateZ(5px);
       box-shadow: 0 5px 13px rgba(0, 0, 0, 0.2);
@@ -683,6 +694,7 @@ body .home-header {
         margin-left: 9px;
         margin-top: 7px;
       }
+
       &:hover {
         color: #3b5998;
         border: 1px solid #3b5998;
@@ -691,6 +703,7 @@ body .home-header {
 
     .next_doctor {
       margin-left: 20px;
+
       .fas {
         margin-left: 11px;
       }

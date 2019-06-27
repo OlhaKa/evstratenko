@@ -39,8 +39,7 @@
     padding-left: 15px;
   }
   .section-2 .about_box {
-    margin-bottom: 71px;
-    margin-top: 78px;
+    margin-bottom: 0;
   }
 
   .top_header .container {
@@ -244,7 +243,6 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 130px;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 5px;
@@ -254,8 +252,8 @@
     display: none;
   }
   .barcelona {
-    h2 {
-      text-indent: calc(50% + 24px);
+    h2, h3, h4, h5 {
+      padding-left: calc(50% + 24px);
     }
     p {
       -webkit-column-gap: 48px;

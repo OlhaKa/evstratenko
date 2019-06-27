@@ -23,9 +23,11 @@
   .col-md-4 {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
   }
   img {
     max-width: 100%;
+    height: auto;
   }
   h3 {
     color: #1a1a1a;

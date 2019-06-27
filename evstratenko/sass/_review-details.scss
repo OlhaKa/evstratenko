@@ -1,5 +1,6 @@
 .review-details {
   padding: 235px 0 110px;
+  min-height: calc(100vh - 62px);
   .page_title {
     color: #100e12;
     font-size: 18px;
@@ -29,6 +30,7 @@
   }
   .back_btn {
     text-align: right;
+    margin-top: 103px;
     .fas {
       height: 32px;
       width: 32px;
