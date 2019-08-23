@@ -5,23 +5,24 @@ $(document).ready(function () {
     var topBannerSlider = $('.top_banner_slider');
     var currentSlideNum = $('.current_slide');
 
-    function showSliderAnimation() {
-        $('.slick-current .devider').addClass("scaled");
-        $('.slick-current .top_title span').css({"transform": "none"});
-        $('.slick-current .btm_title span').css({"transform": "none"});
-    }
+    // function showSliderAnimation() {
+    //     $('.slick-current .devider').addClass("scaled");
+    //     $('.slick-current .top_title span').css({"transform": "none"});
+    //     $('.slick-current .btm_title span').css({"transform": "none"});
+    // }
 
-    function hideSliderAnimation() {
-        $('.slick-current .devider').removeClass("scaled");
-        $('.slick-current .top_title span').css({transform: "translateY(150px) skew(0deg, 25deg)"});
-        $('.slick-current .btm_title span').css({"transform": "translateY(-160px) skew(0deg, -25deg)"});
-    }
+    // function hideSliderAnimation() {
+    //     $('.slick-current .devider').removeClass("scaled");
+    //     $('.slick-current .top_title span').css({transform: "translateY(150px) skew(0deg, 25deg)"});
+    //     $('.slick-current .btm_title span').css({"transform": "translateY(-160px) skew(0deg, -25deg)"});
+    // }
 
     topBannerSlider.on('init', function (event, slick) {
         $(".slide_count").text(slick.slideCount);
         currentSlideNum.text(1);
         setTimeout(function () {
-            showSliderAnimation()
+            $('.slick-current .btm_title span').addClass('fade-in')
+            // showSliderAnimation()
         }, 1000)
     });
 
@@ -34,11 +35,13 @@ $(document).ready(function () {
     topBannerSlider.on('afterChange', function (slick, currentSlide) {
         var i = (currentSlide.currentSlide ? currentSlide.currentSlide : 0) + 1;
         currentSlideNum.text(i);
-        showSliderAnimation()
+        $('.slick-current .btm_title span').addClass('fade-in')
+        // showSliderAnimation()
     });
 
     topBannerSlider.on('beforeChange', function () {
-        hideSliderAnimation()
+        $('.slick-current .btm_title span').removeClass('fade-in')
+        // hideSliderAnimation()
     });
 
     $('.clinics_slider').slick({
