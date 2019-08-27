@@ -5,24 +5,12 @@ $(document).ready(function () {
     var topBannerSlider = $('.top_banner_slider');
     var currentSlideNum = $('.current_slide');
 
-    // function showSliderAnimation() {
-    //     $('.slick-current .devider').addClass("scaled");
-    //     $('.slick-current .top_title span').css({"transform": "none"});
-    //     $('.slick-current .btm_title span').css({"transform": "none"});
-    // }
-
-    // function hideSliderAnimation() {
-    //     $('.slick-current .devider').removeClass("scaled");
-    //     $('.slick-current .top_title span').css({transform: "translateY(150px) skew(0deg, 25deg)"});
-    //     $('.slick-current .btm_title span').css({"transform": "translateY(-160px) skew(0deg, -25deg)"});
-    // }
-
     topBannerSlider.on('init', function (event, slick) {
+        getSlideCenter();
         $(".slide_count").text(slick.slideCount);
         currentSlideNum.text(1);
         setTimeout(function () {
-            $('.slick-current .btm_title span').addClass('fade-in')
-            // showSliderAnimation()
+            $('.slick-current .btm_title span').addClass('scale-slide')
         }, 1000)
     });
 
@@ -33,16 +21,21 @@ $(document).ready(function () {
     });
 
     topBannerSlider.on('afterChange', function (slick, currentSlide) {
+        getSlideCenter();
         var i = (currentSlide.currentSlide ? currentSlide.currentSlide : 0) + 1;
         currentSlideNum.text(i);
-        $('.slick-current .btm_title span').addClass('fade-in')
-        // showSliderAnimation()
+        $('.slick-current .btm_title span').addClass('scale-slide')
     });
 
     topBannerSlider.on('beforeChange', function () {
-        $('.slick-current .btm_title span').removeClass('fade-in')
-        // hideSliderAnimation()
+        $('.slick-current .btm_title span').removeClass('scale-slide')
     });
+
+    function getSlideCenter() {
+        let currentSlideTitle = $('.slick-current .btm_title'),
+            slideCenter = $('.slick-current').height() / 2 - currentSlideTitle.height() / 2;
+        currentSlideTitle.css("top", slideCenter)
+    }
 
     $('.clinics_slider').slick({
         prevArrow: $('.prev_clinic'),
