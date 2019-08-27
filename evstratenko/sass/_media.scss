@@ -124,6 +124,13 @@
       width: 36px;
     }
   }
+  body .top_banner_slider  .banner_slide .container {
+    align-items: center;
+    padding-bottom: 0;
+    .btm_title {
+      max-width: 90%;
+    }
+  }
 }
 @media (max-width: 575px) {
   .navbar .nav-item:after {

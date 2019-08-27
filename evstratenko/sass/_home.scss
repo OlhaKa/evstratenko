@@ -131,7 +131,8 @@ body .home-header {
       position: relative;
       z-index: 1;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
+      padding-bottom: 37px;
     }
 
     .btm_title {
