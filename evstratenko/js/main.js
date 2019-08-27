@@ -16,6 +16,8 @@ $(document).ready(function () {
 
     topBannerSlider.slick({
         vertical: true,
+        autoplay: true,
+        autoplaySpeed: 5000,
         prevArrow: $('.prev'),
         nextArrow: $('.next')
     });
