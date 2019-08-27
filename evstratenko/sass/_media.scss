@@ -114,6 +114,16 @@
     line-height: 36px;
     left: 15px;
   }
+  body .slider_info .slide_counter {
+    top: auto;
+    bottom: 62px;
+    right: auto;
+    left: 32px;
+    line-height: 35px;
+    .slide_count {
+      width: 36px;
+    }
+  }
 }
 @media (max-width: 575px) {
   .navbar .nav-item:after {
