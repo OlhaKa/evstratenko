@@ -32,13 +32,12 @@ body .home-header {
 
 //----------SECTION 1---------
 .section-1 {
-  //height: 100vh;
   position: relative;
 
   .banner_paginator {
     position: absolute;
     bottom: 62px;
-    right: 32px;
+    right: 23px;
     z-index: 2;
 
     .prev, .next {
@@ -87,8 +86,8 @@ body .home-header {
 
   .slide_counter {
     position: absolute;
-    right: 15px;
-    top: calc(50% - 60px);
+    right: 4px;
+    top: calc(50% - 22px);
     color: #fff;
     font-size: 18px;
     line-height: 60px;
